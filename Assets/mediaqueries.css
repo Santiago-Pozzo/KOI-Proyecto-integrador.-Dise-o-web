@@ -1,0 +1,93 @@
+/* TABLET */
+
+@media (min-width: 768px) {
+    /* NAVBAR */
+    .navbar {
+        height: 100px;
+        background: linear-gradient(135deg, white 20%, var(--english-vermillion));
+    }
+
+    .navbar__menu-icon {
+        display: none;
+      }
+    
+    .nav-list {
+        border: 0px;
+        display: flex;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .nav-list__item a {
+        color: var(--dark-slate-gray);
+      }
+
+
+    /* HERO */
+    .hero {
+        padding: 80px;
+        grid-template-areas: 
+        "info separador user"
+        "about-us about-us about-us";
+        gap: 25px;
+    }
+
+    .hero__separador {
+        height: 100%;
+        width: 3px;
+    }
+
+    .info__title {
+        font-size: 2rem;
+       } 
+    
+    .info__title--grad {
+        font-size: 40px;
+        font-weight: 900;
+       }
+    
+    .info__slogan {
+        font-size: 2rem;
+       }
+    
+    .user__text {
+        font-size: 25px;
+       }
+
+    .about-us__title {
+        font-size: 2rem;
+        font-weight: 800;
+    }
+      
+    .about-us__text {
+        font-size: 20px;
+        font-weight: 300;
+    }
+
+}
+
+
+/* DESKTOP */
+@media (min-width: 1024px) {
+   /* HERO */
+   .info__title {
+    font-size: 42px;
+   } 
+
+   .info__title--grad {
+    font-size: 50px;
+    font-weight: 900;
+   }
+
+   .info__slogan {
+    font-size: 2rem;
+   }
+
+   .user__text {
+    font-size: 28px;
+   }
+
+   .btn-login, .btn-singin {
+    font-size: 22px;
+   }
+}
