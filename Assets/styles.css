@@ -142,7 +142,7 @@
     gap: 20px;
   }
 
-  .info__title {
+  .info__title, .title {
     font-family: frank Ruhl libre;
     font-size: 28px;
     font-weight: 600;
@@ -158,7 +158,7 @@
     -webkit-background-clip: text;
   }
 
-  .info__slogan {
+  .info__slogan, .slogan {
     font-family: josefin sans;
     font-size: 25px;
     font-weight: 400;
@@ -317,4 +317,55 @@
 
   .products__btn {
     margin-bottom: 30px;
+  }
+
+
+  /* CONTACT */
+
+  .contact {
+    margin-top: 80px;
+    width: 80%;
+    display: grid;
+    grid-auto-rows: auto;
+    align-items: center;
+    justify-items: center;
+    gap: 15px;
+    margin-bottom: 50px;
+   }
+
+  .contact__title {
+    text-align: center;
+  }
+
+  .contact__slogan {
+    text-align: center;
+  }
+
+  .contact__map {
+    height: 270px;
+    width: 270px;
+    border-radius: 20px;
+  }
+
+  .contact__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+  }
+
+  .contact__item span {
+    font-family: karma;
+    font-size: 20px;
+    font-weight: 300;
+    color: var(--dark-slate-gray);
+  }
+
+  .contact__item i {
+    font-size: 22px;
+    background: linear-gradient(120deg,var(--english-vermillion), var(--cadet-blue), var(--dark-turqoise));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    margin-bottom: 2px;
   }
