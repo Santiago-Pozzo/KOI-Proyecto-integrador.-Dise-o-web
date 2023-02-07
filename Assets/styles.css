@@ -16,7 +16,7 @@
     font-family: "Poppins", sans-serif;
     text-decoration: none;
     list-style-type: none;
-    border: solid greenyellow 1px;
+    /* border: solid greenyellow 1px; */
   }
 
   /* BOTONES */
@@ -56,6 +56,7 @@
   }
 
   .navbar__menu-icon {
+    font-size: 22px;
     position:  absolute;
     right: 15px;
     color: var(--dark-slate-gray);
@@ -113,6 +114,7 @@
   .main {
    display: flex;
    flex-direction: column; 
+   align-items: center;
    margin-top: 100px;
    background: linear-gradient(white 5%, var(--snow));
   }
@@ -229,4 +231,90 @@
     font-size: 15px;
     font-weight: 300;
     color: var(--dark-slate-gray);
+  }
+
+  /* PRODUCTOS */
+
+  .products {
+    margin-top: 60px;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: row;
+    justify-items: center;
+    gap: 20px;
+  }
+
+  .products__title {
+    width: 80%;
+    font-family: frank Ruhl libre;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--dark-slate-gray);
+    text-align: center;
+  }
+
+  .card {
+    display: grid;
+    grid-template-areas: 
+    "img img"
+    "title title"
+    "texto texto"
+    "price cart";
+    justify-items: center;
+    width: 270px;
+    border: 2px solid;
+    border-color: var(--dark-slate-gray);
+    border-radius: 1rem;
+    padding: 1rem;
+    gap: 10px;
+  }
+
+  .card__img {
+    grid-area: img;
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+  }
+
+  .card__title {
+    grid-area: title;
+    font-family: josefin sans;
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--dark-slate-gray);
+  }
+
+  .card__text {
+    grid-area: texto;
+    font-family: karma;
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--dark-slate-gray);
+    text-align: center;
+  }
+
+  .card__price {
+    grid-area: price;
+    font-family: josefin sans;
+    font-size: 25px;
+    font-weight: 400;
+    color: var(--dark-slate-gray);
+  }
+
+  .card__cart-icon {
+    grid-area: cart;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card__cart-icon i {
+    font-size: 25px;
+    background: linear-gradient(120deg,var(--english-vermillion), var(--cadet-blue), var(--dark-turqoise));
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+  }
+
+  .products__btn {
+    margin-bottom: 30px;
   }
