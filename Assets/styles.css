@@ -1,4 +1,29 @@
+
+/* Fuentes */
 @import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre&family=Josefin+Sans&family=Karma&display=swap');
+
+@font-face {
+  font-family: 'Korean Calligraphy';
+  src: url(./Fonts/Korean\ Calligraphy.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Shinrinyoku';
+  src: url(.//Fonts/Shinrinyoku.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Fujimaru';
+  src: url(./Fonts/Fujimaru-Regular.ttf);
+  font-style: normal;
+  font-weight: normal;
+}
+
+
 
 
 :root {
@@ -39,7 +64,7 @@
   }
 
   /* NAVBAR */
-  .navbar {
+  .header__navbar {
     position: fixed;
     margin-top: 0;
     display: flex;
@@ -52,7 +77,7 @@
   }
 
   .navbar__logo {
-    height: 100%;
+    height: 80px;
   }
 
   .navbar__menu-icon {
@@ -116,7 +141,7 @@
    flex-direction: column; 
    align-items: center;
    margin-top: 100px;
-   background: linear-gradient(white 5%, var(--snow));
+   background: linear-gradient(white 5%, var(--snow)90%, var(--english-vermillion));
   }
 
   /* HERO */
@@ -150,8 +175,8 @@
   }
 
   .info__title--grad {
-    font-size: 2rem;
-    font-weight: 800;
+    font-family: Shinrinyoku;
+    font-size: 38px;
     background: linear-gradient(120deg,var(--english-vermillion), var(--cadet-blue), var(--dark-turqoise));
     color: transparent;
     background-clip: text;
@@ -160,7 +185,7 @@
 
   .info__slogan, .slogan {
     font-family: josefin sans;
-    font-size: 25px;
+    font-size:25px;
     font-weight: 400;
     color: var(--dark-slate-gray);
   }
@@ -317,6 +342,8 @@
 
   .products__btn {
     margin-bottom: 30px;
+    background: var(--dark-slate-gray);
+    padding: 8px 15px;
   }
 
 
@@ -324,13 +351,15 @@
 
   .contact {
     margin-top: 80px;
-    width: 80%;
+    width: 100%;
     display: grid;
     grid-auto-rows: auto;
     align-items: center;
     justify-items: center;
     gap: 15px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
+    margin-bottom: 0px;
+    /* background: linear-gradient(150deg, var(--snow) 60%, var(--english-vermillion)); */
    }
 
   .contact__title {
@@ -347,25 +376,57 @@
     border-radius: 20px;
   }
 
+  .contact__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .contact__item {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 2px;
+    padding: 2px;
   }
 
   .contact__item span {
     font-family: karma;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 300;
     color: var(--dark-slate-gray);
   }
 
-  .contact__item i {
-    font-size: 22px;
+  .contact__item i, .contact-item {
+    font-size: 20px;
     background: linear-gradient(120deg,var(--english-vermillion), var(--cadet-blue), var(--dark-turqoise));
     color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
     margin-bottom: 2px;
+  }
+
+  /* FOOTER */
+
+  .footer {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .footer__navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .footer__navbar img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .foot-nav-list {
+    display: flex;
+    gap: 15px;
   }

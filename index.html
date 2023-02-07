@@ -18,7 +18,7 @@
 <body>
     <header class="header">
         <div class="header__navbar navbar">
-            <img class="navbar__logo" src="./Assets/Imgs/logo2.png" alt="logo">
+            <a href="#"><img class="navbar__logo" src="./Assets/Imgs/logo2.png" alt="logo"></a>            
 
             <!-- Menu hamburguesa -->
             <label for="menu-icon" class="navbar__menu-icon">
@@ -36,6 +36,7 @@
     </header>
 
     <main class="main">
+        <!-- HERO -->
         <section class="hero">
             <div class="hero__info info">
                 <h1 class="info__title title"> <span class="info__title info__title--grad">KOI</span> aromas y sabores</h1>
@@ -58,6 +59,7 @@
             </div>
         </section>
 
+        <!-- PRODUCTS -->
         <section class="products">
            <h1 class="products__title">Conocé nuestros productos y comenzá a disfrutar</h1>
            <div class="products__card card">
@@ -108,23 +110,24 @@
             <a class="card__cart-icon" href="#"><i class="fa-sharp fa-solid fa-cart-arrow-down"></i></a>           
           </div>
 
-          <a class="btn products__btn">Ver más</a>           
+          <a class="btn products__btn" href="#">Ver más</a>           
         </section>
 
+        <!-- CONTACT -->
         <section class="contact">
             <h1 class="contact__title title">¡Contactanos!</h1>
             <h2 class="contact__slogan slogan">Buscanos en las redes para enterarte de todas las novedades</h2>
             <ul class="contact__list">
-                <li  
+                <li>  
                     <a class="contact__item" href="#"><i class="fa-brands fa-square-whatsapp"></i><span>123456789</span></a> 
                 </li>
 
                 <li>
-                    <a class="contact__item" href="#"><i class="fa-brands fa-square-instagram"></i> </i><span>@KOI_cba</span></a>
+                    <a class="contact__item" href="#"><i class="fa-brands fa-square-instagram"></i><span>@KOI_cba</span></a>
                 </li>
 
                 <li>
-                    <a class="contact__item" href="#"><i class="fa-brands fa-square-facebook"></i> </i><span>/KOI.cba</span></a>
+                    <a class="contact__item" href="#"><i class="fa-brands fa-square-facebook"></i><span>/KOI.cba</span></a>
                 </li>
             </ul>
             <iframe class="contact__map" src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d13618.8727331153!2d-64.27799675!3d-31.421889750000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1smaps%20google!5e0!3m2!1ses-419!2sar!4v1675777093268!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -132,8 +135,18 @@
         
     </main>
 
-    <footer>
-
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__navbar footer-navbar">
+            <img class="footer-navbar__logo" src="./Assets/Imgs/logo2.png" alt="logo">
+                     
+            <ul class="footer-navbar__list foot-nav-list">
+                <li class="foot-nav-list__item"> <a class="contact-item" href="#"><i class="fa-brands fa-square-whatsapp"></i></a></li>
+                <li class="foot-nav-list__item"> <a class="contact-item" href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li class="foot-nav-list__item"> <a class="contact-item" href="#"><i class="fa-brands fa-square-facebook"></i></a> </li>
+                <li class="foot-nav-list__item"> <a class="contact-item" href="#"><i class="fa-solid fa-map-location-dot"></i></a></li>
+            </ul>            
+        </div>
     </footer>
     
 </body>

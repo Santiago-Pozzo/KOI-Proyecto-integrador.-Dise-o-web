@@ -1,8 +1,8 @@
-/* TABLET */
 
+/* TABLET */
 @media (min-width: 768px) {
     /* NAVBAR */
-    .navbar {
+    .header__navbar {
         height: 100px;
         background: linear-gradient(135deg, white 20%, var(--english-vermillion));
     }
@@ -42,7 +42,7 @@
        } 
     
     .info__title--grad {
-        font-size: 40px;
+        font-size: 48px;
         font-weight: 900;
        }
     
@@ -91,7 +91,6 @@
     /* CONTACT */
     .contact {
         margin-top: 150px;
-        margin-bottom: 150px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(1fr 3);
     }
@@ -115,6 +114,15 @@
         grid-area:2/2/4/3 ;
     }
 
+    .contact__item i {
+        font-size: 25px;
+        color: var(--dark-slate-gray);
+    }
+    
+      .contact__item span {
+        font-size: 22px;
+    }
+
 }
 
 
@@ -130,7 +138,7 @@
    } 
 
    .info__title--grad {
-        font-size: 50px;
+        font-size: 60px;
         font-weight: 900;
    }
 
@@ -182,4 +190,6 @@
     .contact__slogan {
         font-size: 30px;
     }
+
+
 }
