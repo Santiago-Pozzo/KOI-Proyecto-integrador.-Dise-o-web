@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto integrador</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../Assets/styles.css">
+    <link rel="stylesheet" href="../Assets/mediaqueries.css">
+    <link rel="stylesheet" href="../Assets/animations.css">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <div class="header__navbar navbar">
+            <a href="#"><img class="navbar__logo" src="../Assets/Imgs/logo2.png" alt="logo"></a>            
+        </div>
+    </header>
+
+    <Main class="main">
+        <section class="singin">
+            <h1 class="singin__title title">Creá tu usuario</h1>
+            <form class="singin__form form sing-form" action="">
+                <div class="form__item sing-form__item">
+                    <label class="form__label" for="name">Nombre:</label>
+                    <input class="form__input-box" type="text" id="name" placeholder="Ingresá tu nombre">
+                </div>
+
+                <div class="form__item sing-form__item">
+                    <label class="form__label" for="last-name">Apellido:</label>
+                    <input class="form__input-box" type="text" id="last-name" placeholder="Ingresá tu apellido">
+                </div>
+
+                <div class="form__item sing-form__item">
+                    <label class="form__label" for="email">Mail:</label>
+                    <input class="form__input-box" type="email" id="email" placeholder="Ingresá tu dirección de email">
+                </div>
+
+                <div class="form__item sing-form__item">
+                    <label class="form__label" for="birth-date">Fecha de nacimiento:</label>
+                    <input class="form__input-box" type="date" id="birth-date">
+                </div>
+
+                <div class="form__item sing-form__item">
+                    <label class="form__label" for="user">Nombre de usuario:</label>
+                    <input class="form__input-box" type="text" id="user" placeholder="Ingresá tu nombre de usuario">
+                </div>
+                                
+                <div class="form__item sing-form__item">
+                    <label class="form__label" for="pass">Contraseña:</label>
+                    <input class="form__input-box" type="password" id="pass" placeholder="Ingresá tu contraseña">
+                </div>    
+                
+                <div class="form__item sing-form__item">
+                    <label class="form__label" for="pass">Repetir contraseña:</label>
+                    <input class="form__input-box" type="password" id="pass" placeholder="Ingresá tu contraseña">
+                </div>  
+
+                <button class="btn form__btn" type="submit">Iniciar sesión</button>               
+            </form>
+        </section>
+    </Main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__navbar footer-navbar">
+            <img class="footer-navbar__logo" src="../Assets/Imgs/logo2.png" alt="logo">
+                     
+            <ul class="footer-navbar__list foot-nav-list">
+                <li class="foot-nav-list__item"> <a class="contact-item" href="#"><i class="fa-brands fa-square-whatsapp"></i></a></li>
+                <li class="foot-nav-list__item"> <a class="contact-item" href="#"><i class="fa-brands fa-square-instagram"></i></a></li>
+                <li class="foot-nav-list__item"> <a class="contact-item" href="#"><i class="fa-brands fa-square-facebook"></i></a> </li>
+                <li class="foot-nav-list__item"> <a class="contact-item" href="#"><i class="fa-solid fa-map-location-dot"></i></a></li>
+            </ul>            
+        </div>
+    </footer>
+    
+</body>
+</html>

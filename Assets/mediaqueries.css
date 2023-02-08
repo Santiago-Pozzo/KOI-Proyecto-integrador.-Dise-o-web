@@ -25,7 +25,8 @@
 
     /* HERO */
     .hero {
-        padding: 80px;
+        margin-top: 60px;
+        padding: 90px;
         grid-template-areas: 
         "info separador user"
         "about-us about-us about-us";
@@ -123,12 +124,18 @@
         font-size: 22px;
     }
 
+    /* FOOTER */
+    .footer {
+        padding: 10px 0 10px;
+      }
+
     /* ---------------------LOGIN----------------------- */
 
     .login {
         margin-top: 210px;
         margin-bottom: 250px;
         width: 60%;
+        max-width: 480px;
     }
 
     .login__title {
@@ -157,6 +164,22 @@
     .form__btn {
         font-size: 30px;
         padding: 5px;
+    }
+
+    /* ---------------------SINGIN----------------------- */
+    .singin {
+        margin-top: 110px;
+        margin-bottom: 250px;
+        width: 60%;
+        max-width: 650px;
+    }
+
+    .singin__title {
+        font-size: 45px;
+    }
+
+    .singin__form {
+        gap: 10px;
     }
 
 }
@@ -231,6 +254,7 @@
     .login {
         margin-top: 130px;
         width: 40%;
+        max-width: 600px;
     }
 
     .login__form {
@@ -239,6 +263,16 @@
 
     .form__btn {
         margin-top: 15px;
+    }
+
+    /* ---------------------SINGIN----------------------- */
+    .singin {
+        margin-top: 130px;
+        max-width: 750;
+    }
+
+    .singin__form {
+        gap: 15px;
     }
 
 }
