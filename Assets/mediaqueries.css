@@ -123,6 +123,42 @@
         font-size: 22px;
     }
 
+    /* ---------------------LOGIN----------------------- */
+
+    .login {
+        margin-top: 210px;
+        margin-bottom: 250px;
+        width: 60%;
+    }
+
+    .login__title {
+        font-size: 45px;
+    }
+
+    .login__form {
+        gap: 10px;
+    }
+
+    .form__label {
+        font-size: 25px;
+        font-weight: 600;
+    }
+
+    .form__item {
+        gap: 5px;
+    }
+
+    .form__input-box {
+        border-radius: 15px;
+        padding: 5px;
+        font-size: 20px;
+    }
+
+    .form__btn {
+        font-size: 30px;
+        padding: 5px;
+    }
+
 }
 
 
@@ -191,5 +227,18 @@
         font-size: 30px;
     }
 
+    /* ---------------------LOGIN----------------------- */
+    .login {
+        margin-top: 130px;
+        width: 40%;
+    }
+
+    .login__form {
+        gap: 15px;
+    }
+
+    .form__btn {
+        margin-top: 15px;
+    }
 
 }
