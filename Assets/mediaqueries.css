@@ -2,6 +2,9 @@
 /* TABLET */
 @media (min-width: 768px) {
     /* NAVBAR */
+    :target {
+        scroll-margin: 120px;
+      }
     .header__navbar {
         height: 100px;
         background: linear-gradient(135deg, white 20%, var(--english-vermillion));
@@ -192,6 +195,10 @@
 
 /* DESKTOP */
 @media (min-width: 1024px) {
+    :target {
+        scroll-margin: 150px;
+      }
+      
    /* HERO */
    .hero {
     width: 800px;
