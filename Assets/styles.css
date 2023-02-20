@@ -104,8 +104,6 @@ html {
 
   .nav-list {
     display: none;
-    /* transform: translateY(-200%);
-    transition: all 0.5s cubic-bezier(0.92, 0.01, 0.35, 0.99); */
   }
 
   .nav-list:target {
@@ -179,11 +177,16 @@ html {
     gap: 20px;
   }
 
-  .info__title, .title {
+
+  .title {
     font-family: frank Ruhl libre;
     font-size: 28px;
     font-weight: 600;
     color: var(--dark-slate-gray);
+  }
+
+  #hero:target .info__title {
+    animation: grow-up 1.5s;
   }
 
   .info__title--grad {
@@ -195,12 +198,15 @@ html {
     -webkit-background-clip: text;
   }
 
-
   .info__slogan, .slogan {
     font-family: josefin sans;
     font-size:25px;
     font-weight: 400;
     color: var(--dark-slate-gray);
+  }
+
+  #hero:target .info__slogan {
+    animation: from-left 1s ease-in;
   }
 
   .hero__separador {
@@ -230,6 +236,10 @@ html {
     color: var(--dark-slate-gray);
   }
 
+  #hero:target .user__text {
+    animation: from-right 1.5s ease-in;
+  }
+
   .user__btns-box {
     display: flex;
     justify-content: center;
@@ -239,6 +249,12 @@ html {
 
   .btn-singin {
     background: var(--cadet-blue);
+  }
+
+  #hero:target .btn-singin {
+    animation: vibrar 0.4s;
+    animation-iteration-count: 2;
+    animation-delay: 1.6s;
   }
 
   /* HERO. About-us */
@@ -256,18 +272,20 @@ html {
     text-align: center;
   }
 
-  .about-us__title {
-    font-family: frank Ruhl libre;
-    font-size: 28px;
-    font-weight: 600;
-    color: var(--dark-slate-gray);
-  }
+  #about-us:target .about-us__title {
+    animation: grow-up 1.5s;
+    animation-delay: 0.1s;
+   }
   
   .about-us__text {
     font-family: karma;
     font-size: 15px;
     font-weight: 300;
     color: var(--dark-slate-gray);
+  }
+
+  #about-us:target .about-us__text {
+    animation: from-bottom 1.2s ease-out;
   }
 
   /* PRODUCTOS */
@@ -283,12 +301,13 @@ html {
 
   .products__title {
     width: 80%;
-    font-family: frank Ruhl libre;
-    font-size: 28px;
-    font-weight: 600;
-    color: var(--dark-slate-gray);
     text-align: center;
   }
+
+  #products:target .products__title{
+    animation: grow-up 1.5s;
+    animation-delay: 0.1s;
+   }
 
   .card {
     display: grid;
@@ -306,6 +325,31 @@ html {
     gap: 10px;
   }
 
+  #products:target .card {
+    animation: from-bottom 1.5s ease-in-out;
+  }
+
+  #products:target .card:nth-child(2) {
+    animation: from-left 0.9s ease-in;
+  }
+
+  #products:target .card:nth-child(7) {
+    animation: from-right 2s ease-in;
+  }
+
+  #products:target .card:nth-child(5) {
+    animation: from-bottom 3s ease-out;
+  }
+
+  #products:target .card:nth-child(6) {
+    animation-duration: 3.2s;
+  }
+
+  #products:target .card:nth-child(4n+3) {
+    animation-duration: 2.5s;
+  }
+
+   
   .card__img {
     grid-area: img;
     height: 150px;
@@ -371,15 +415,23 @@ html {
     gap: 15px;
     padding-bottom: 50px;
     margin-bottom: 0px;
-    /* background: linear-gradient(150deg, var(--snow) 60%, var(--english-vermillion)); */
-   }
+  }
 
   .contact__title {
     text-align: center;
   }
 
+  .contact:target .contact__title {
+    animation: grow-up 1.5s;
+    animation-delay: 0.1s;
+  }
+
   .contact__slogan {
     text-align: center;
+  }
+
+  .contact:target .contact__slogan {
+    animation: from-left 1.2s ease-in;
   }
 
   .contact__map {
@@ -388,10 +440,18 @@ html {
     border-radius: 20px;
   }
 
+  .contact:target .contact__map {
+    animation: from-right 1.3s ease-in;
+  }
+
   .contact__list {
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .contact:target .contact__list {
+    animation: from-bottom 1.9s ease-in;
   }
 
   .contact__item {

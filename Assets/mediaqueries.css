@@ -59,7 +59,7 @@
        }
 
     .btn-singin {
-        padding: 11px;
+        padding: 11px 5px;
         font-size: 14px;
     }
 
@@ -71,6 +71,10 @@
     .about-us__text {
         font-size: 20px;
         font-weight: 300;
+    }
+
+    .about-us {
+        margin-top: 80px;
     }
 
     /* PRODUCTS */
@@ -99,6 +103,7 @@
 
     /* CONTACT */
     .contact {
+        width:80% ;
         margin-top: 150px;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: repeat(1fr 3);
@@ -193,6 +198,9 @@
 }
 
 
+
+
+
 /* DESKTOP */
 @media (min-width: 1024px) {
     :target {
@@ -226,8 +234,12 @@
    }
 
    .btn-singin {
-        padding: 13px;
+        padding: 13px 7px;
         font-size: 16px;
+   }
+
+   .about-us {
+    margin-top: 100px;
    }
 
    /* PRODUCTS */
@@ -242,7 +254,6 @@
         grid-column-end: 4;
         font-size: 2rem;
     }
-
 
     .products__btn {
         grid-column-start: 1;
