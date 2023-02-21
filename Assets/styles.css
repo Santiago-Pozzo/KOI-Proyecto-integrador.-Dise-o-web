@@ -312,13 +312,10 @@ html {
 
   .card {
     position: relative;
-    display: grid;
-    grid-template-areas: 
-    "img img"
-    "title title"
-    "texto texto"
-    "price cart";
-    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: space-between;
+    align-items: center;
     width: 270px;
     border: 2px solid;
     border-color: var(--dark-slate-gray);
@@ -375,6 +372,15 @@ html {
     font-weight: 300;
     color: var(--dark-slate-gray);
     text-align: center;
+    margin-bottom: 28px;
+  }
+
+  .card__bottom {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 10px;
   }
 
   .card__price {
