@@ -72,6 +72,7 @@ html {
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 1;
   }
 
   /* NAVBAR */
@@ -310,6 +311,7 @@ html {
    }
 
   .card {
+    position: relative;
     display: grid;
     grid-template-areas: 
     "img img"
@@ -363,6 +365,7 @@ html {
     font-size: 25px;
     font-weight: 400;
     color: var(--dark-slate-gray);
+    text-align: center;
   }
 
   .card__text {
@@ -450,8 +453,16 @@ html {
     align-items: center;
   }
 
-  .contact:target .contact__list {
-    animation: from-bottom 1.9s ease-in;
+  .contact:target .contact__list li:nth-child(1){
+    animation: from-bottom 0.8s ease-out;
+  }
+
+  .contact:target .contact__list li:nth-child(2){
+    animation: from-bottom 1.1s ease-out;
+  }
+
+  .contact:target .contact__list li:nth-child(3){
+    animation: from-bottom 1.4s ease-out;
   }
 
   .contact__item {
@@ -578,3 +589,9 @@ html {
     padding: 10px 0;
   }
 
+
+  /* -----------------PRODUCTOS-------------------------- */
+
+  .products-page {
+    margin-bottom: 200px;
+  }
